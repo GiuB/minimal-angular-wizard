@@ -1,0 +1,11 @@
+<section id="step-1" class="step-wrap">
+	<div class="step-datas">step-1</div>
+	<div class="pagination">
+		<div class="technical-years-container">
+			<div class="technical-years-list" ng-repeat="year in technical_data.years">
+				<button ng-click="setYear(year)">{{ year }}</button>
+			</div>
+		</div>
+		<a ui-sref="wizard.step-2">Next step</a>
+	</div>
+</section>

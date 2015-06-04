@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="pgWeb" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="app/wizard/wizard.css" rel="stylesheet">
+
+	<!-- compiled JavaScript -->
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="app/wizard/wizard.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+    <!--
+    <script type="text/javascript" src="src/app/about/about.js"></script>
+    <script type="text/javascript" src="src/app/app.js"></script>
+    <script type="text/javascript" src="src/app/home/home.js"></script>
+
+    <script type="text/javascript" src="src/common/plusOne/plusOne.js"></script>
+    <script type="text/javascript" src="templates-common.js"></script>
+    <script type="text/javascript" src="templates-app.js"></script> -->
+
+    <!-- load nganimate, and ui-router -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+  </head>
+  <body>
+
+    <div class="main-steps-container" ui-view="main"></div>
+    <script>
+    var years = ['2015', '2014', '2013'];
+    </script>
+
+  </body>
+</html>
